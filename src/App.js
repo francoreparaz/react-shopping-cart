@@ -6,6 +6,8 @@ import Products from "./components/Products";
 import Filter from "./components/Filter";
 import Cart from "./components/Cart";
 
+
+
 class App extends React.Component {
   constructor(){
     super();
@@ -91,6 +93,7 @@ class App extends React.Component {
        <main>
          <div className="content">
            <div className="main">
+      
                <Filter 
                 count={this.state.products.length} 
                 size={this.state.size}
