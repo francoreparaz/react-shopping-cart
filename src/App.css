@@ -7,12 +7,16 @@ body,
     height: 100vh;
     margin: 0;
 }
-body,input,select,textarea{
+body,
+input,
+button,
+select,
+textarea{
     font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.grid-cointainer{
+.grid-container{
     display: grid;
     grid-template-areas: "header"
     "main"
@@ -28,6 +32,7 @@ header{
     grid-area: header;
     background-color: #023040;
     color: white;
+    display: flex;
     align-items: center;
     padding: .5rem;
 }
@@ -45,6 +50,18 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main{
+    flex: 3 60rem;
+}
+
+.sidebar{
+    flex: 1 20rem
+}
 
